@@ -192,7 +192,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .handle-box {
   margin: 20px;
 }

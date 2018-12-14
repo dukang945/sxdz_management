@@ -48,6 +48,159 @@ export default new Router({
   routes: [{
       path: '/Welcome',
       component: Welcome,
+      children: [{
+          path: '/skillColumn',
+          component: SkillColumn
+        },
+        {
+          path: '/skillDetail',
+          component: SkillDetail
+        },
+        {
+          path: '/about',
+          component: About
+        },
+        {
+          path: '/act',
+          component: Act
+        },
+        {
+          path: '/actDetail',
+          component: ActDetail
+        },
+        {
+          path: '/advice',
+          component: Advice
+        },
+        {
+          path: '/aim',
+          component: Aim
+        },
+        {
+          path: '/branch',
+          component: Branch
+        },
+        {
+          path: '/brand',
+          component: Brand
+        },
+        {
+          path: '/classify',
+          component: Classify
+        },
+        {
+          path: '/color',
+          component: Color
+        },
+        {
+          path: '/constellation',
+          component: Constellation
+        },
+        {
+          path: '/constellationDetail',
+          component: ConstellationDetail
+        },
+        {
+          path: '/log',
+          component: Log
+        },
+        {
+          path: '/evaluation',
+          component: Evaluation
+        },
+        {
+          path: '/face',
+          component: Face
+        },
+        {
+          path: '/feedback',
+          component: Feedback
+        },
+        {
+          path: '/icon',
+          component: Icon
+        },
+        {
+          path: '/ingredient',
+          component: Ingredient
+        },
+        {
+          path: '/issue',
+          component: Issue
+        },
+        {
+          path: '/keyword',
+          component: Keyword
+        },
+        {
+          path: '/main',
+          component: Main
+        },
+        {
+          path: '/makeup',
+          component: Makeup
+        },
+        {
+          path: '/marking',
+          component: Marking
+        },
+        {
+          path: '/markingDetail',
+          component: MarkingDetail
+        },
+        {
+          path: '/member',
+          component: Member
+        },
+        {
+          path: '/menu',
+          component: Menu
+        },
+        {
+          path: '/module',
+          component: Module
+        },
+        {
+          path: '/part',
+          component: Part
+        },
+        {
+          path: '/product',
+          component: Product
+        },
+        {
+          path: '/rotation',
+          component: Rotation
+        },
+        {
+          path: '/search',
+          component: Search
+        },
+        {
+          path: '/strategy',
+          component: Strategy
+        },
+        {
+          path: '/tag',
+          component: Tag
+        },
+        {
+          path: '/teach',
+          component: Teach
+        },
+        {
+          path: '/temperament',
+          component: Temperament
+        },
+        {
+          path: '/user',
+          component: User
+        },
+        {
+          path: '/vipMsg',
+          component: VipMsg
+        }
+      ]
     },
     {
       path: '/',
@@ -57,157 +210,6 @@ export default new Router({
       path: '/login',
       component: Login
     },
-    {
-      path: '/skillColumn',
-      component: SkillColumn
-    },
-    {
-      path: '/skillDetail',
-      component: SkillDetail
-    },
-    {
-      path: '/about',
-      component: About
-    },
-    {
-      path: '/act',
-      component: Act
-    },
-    {
-      path: '/actDetail',
-      component: ActDetail
-    },
-    {
-      path: '/advice',
-      component: Advice
-    },
-    {
-      path: '/aim',
-      component: Aim
-    },
-    {
-      path: '/branch',
-      component: Branch
-    },
-    {
-      path: '/brand',
-      component: Brand
-    },
-    {
-      path: '/classify',
-      component: Classify
-    },
-    {
-      path: '/color',
-      component: Color
-    },
-    {
-      path: '/constellation',
-      component: Constellation
-    },
-    {
-      path: '/constellationDetail',
-      component: ConstellationDetail
-    },
-    {
-      path: '/log',
-      component: Log
-    },
-    {
-      path: '/evaluation',
-      component: Evaluation
-    },
-    {
-      path: '/face',
-      component: Face
-    },
-    {
-      path: '/feedback',
-      component: Feedback
-    },
-    {
-      path: '/icon',
-      component: Icon
-    },
-    {
-      path: '/ingredient',
-      component: Ingredient
-    },
-    {
-      path: '/issue',
-      component: Issue
-    },
-    {
-      path: '/keyword',
-      component: Keyword
-    },
-    {
-      path: '/main',
-      component: Main
-    },
-    {
-      path: '/makeup',
-      component: Makeup
-    },
-    {
-      path: '/marking',
-      component: Marking
-    },
-    {
-      path: '/markingDetail',
-      component: MarkingDetail
-    },
-    {
-      path: '/member',
-      component: Member
-    },
-    {
-      path: '/menu',
-      component: Menu
-    },
-    {
-      path: '/module',
-      component: Module
-    },
-    {
-      path: '/part',
-      component: Part
-    },
-    {
-      path: '/product',
-      component: Product
-    },
-    {
-      path: '/rotation',
-      component: Rotation
-    },
-    {
-      path: '/search',
-      component: Search
-    },
-    {
-      path: '/strategy',
-      component: Strategy
-    },
-    {
-      path: '/tag',
-      component: Tag
-    },
-    {
-      path: '/teach',
-      component: Teach
-    },
-    {
-      path: '/temperament',
-      component: Temperament
-    },
-    {
-      path: '/user',
-      component: User
-    },
-    {
-      path: '/vipMsg',
-      component: VipMsg
-    }
+
   ]
 })
