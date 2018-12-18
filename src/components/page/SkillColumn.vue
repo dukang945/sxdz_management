@@ -80,31 +80,19 @@ export default {
       tableData3: [
         {
           date: "1",
-          name: "王小虎"
+          name: "唱歌"
         },
         {
           date: "2",
-          name: "王小虎"
+          name: "音乐"
         },
         {
           date: "3",
-          name: "王小虎"
+          name: "舞蹈"
         },
         {
           date: "4",
-          name: "王小虎"
-        },
-        {
-          date: "5",
-          name: "王小虎"
-        },
-        {
-          date: "6",
-          name: "王小虎"
-        },
-        {
-          date: "7",
-          name: "王小虎"
+          name: "魔术"
         }
       ],
       multipleSelection: [],

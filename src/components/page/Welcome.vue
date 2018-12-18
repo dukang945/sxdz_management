@@ -211,7 +211,7 @@ export default {
 .el-main {
   background-color: #fff;
   color: #333;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
 }
 

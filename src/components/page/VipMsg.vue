@@ -95,10 +95,10 @@ export default {
     return {
       tableData3: [
         {
-          name: "化妆",
-          type: "妆容教程",
-          isOnline: "true",
-          link: "1",
+          name: "杜康",
+          tel: "13164151625",
+          gender: "男",
+          化妆水平: "1",
           pic: ""
         },
         {
