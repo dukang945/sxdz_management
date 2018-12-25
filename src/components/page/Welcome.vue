@@ -26,7 +26,6 @@
         <el-scrollbar style=" background-color: #545c64 ">
           <aside class="el-aside">
             <el-menu
-              default-active="2"
               class="el-menu-vertical-demo"
               background-color="#545c64"
               text-color="#fff"
@@ -34,7 +33,7 @@
               :collapse="isCollapse"
               router
             >
-              <el-submenu index="1">
+              <el-submenu index="1" >
                 <template slot="title">
                   <i class="el-icon-location"></i>
                   <span>技能管理</span>
@@ -137,8 +136,8 @@
           <transition
             name="fade"
             mode="out-in"
-            enter-active-class="animated rotateInDownLeft"
-            leave-active-class="animated rotateOutDownLeft"
+            enter-active-class="animated fadeInLeft"
+            leave-active-class="animated fadeOutRight"
             :duration="200"
           >
             <router-view></router-view>
@@ -151,11 +150,13 @@
 
 <script>
 // import bus from './components/common/bus';
+// import store from '../../vuex/vuex.js'  
 import animate from "animate.css";
 export default {
   data() {
     return {
-      isCollapse: false
+      isCollapse: false,
+      menulist: '',
     };
   },
   computed: {
@@ -167,9 +168,25 @@ export default {
   methods: {
     logout() {
       localStorage.removeItem("ms_username");
+      localStorage.removeItem("menuList");
+      console.log(this.menulist)
       this.$router.push("/login");
+      
+    },
+    getData() {
+      this.$axios.post("api/management/admin/role!list.action",{
+         params: {     
+              }
+      }).then(
+        function(res){
+          console.log(res)
+        }
+      )
     }
-  }
+  },
+  mounted() {
+    this.getData()
+  },
 };
 </script>
 
